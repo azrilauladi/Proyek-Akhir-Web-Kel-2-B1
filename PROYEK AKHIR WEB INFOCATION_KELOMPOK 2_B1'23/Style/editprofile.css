@@ -1,0 +1,204 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(Asset/BG1.png) no-repeat center center fixed;
+    background-size: cover; /* Membuat gambar latar belakang responsif */
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #64444d;
+    width: 80px;
+    height: 55vh;
+    top: 55%;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    padding: 60px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50%; 
+    color: #EEE7ED;
+    font-size: 20px;
+    transition: background-color 0.1s, transform 0.1s;
+}
+
+.navbar a:hover {
+    background-color: #A6979C;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #88696a; /* Background container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #ffffff; /* Warna teks */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff; /* Warna teks label */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid #775c5d; /* Border input */
+    border-radius: 5px;
+    background-color: #64444d; /* Background input */
+    color: #ffffff; /* Warna teks input */
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6e1a1d; /* Background button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #775c5d; /* Background button saat hover */
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: #6e1a1d;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tombol-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.back-user{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #6e1a1d;
+    text-decoration: none;
+}
+.back-user:visited {
+    color: white;
+}
+.back-user:hover {
+    background-color: #775c5d; /* Background button saat hover */
+}
+
+
+/* Media Queries */
+@media (min-width: 640px) {
+    .container {
+        width: 80%;
+        max-width: 700px;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: 0;
+        transform: none;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .container {
+        width: 70%;
+        max-width: 800px;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 60%;
+        max-width: 900px;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 50%;
+        max-width: 1000px;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        width: 40%;
+        max-width: 1100px;
+        margin: 20px;
+    }
+}

@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: url(Asset/BG1.png) no-repeat center center fixed;
+    background-size: cover; /* Membuat gambar latar belakang responsif */
+}
+
+.navbar {
+    position: fixed;
+    background-color: #64444d;
+    width: 80px;
+    height: 55vh;
+    top: 55%;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    padding: 60px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50%; 
+    color: #EEE7ED;
+    font-size: 20px;
+    transition: background-color 0.1s, transform 0.1s;
+}
+
+.navbar a:hover {
+    background-color: #A6979C;
+}
+
+
+.Top {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(Asset/BG1.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    z-index: 1000;
+    border-bottom: 2px solid #64444d;
+    margin-bottom: 30px;
+}
+
+.Top .Logo {
+    align-self: flex-start;
+}
+
+.Top .btn {
+    width: 120px;
+    height: 40px;
+    background: #64444d;
+    color: #EEE7ED;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 0px 0px 0px 0px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(0.90);
+}
+  
+.btn:active {
+    transform: scale(0.90)
+}
+
+.Line {
+    border-top: 5px solid #64444d;
+}
+
+.Account {
+    display: flex;
+    justify-content: center;
+}
+  
+.Account .Main-account {
+    position: relative;
+    width: 600px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: #AA8385;
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 110px;
+}
+
+.Main-account .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    text-decoration-line: none;
+}
+
+.edit-button {
+    color: white;
+    background-color: #44be8b; /* Warna latar default */
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px; /* Tambahkan padding agar terlihat seperti button */ /* Pastikan tampil sebagai button */
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-button:hover {
+    background-color: #64444d; /* Warna saat dihover */
+}
+
+.Main-account .Photo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Main-account .Email {
+    display: grid;
+    align-items: center;
+    margin-left: 20px;
+    padding-bottom: 25px;
+}
+
+
+h2 {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.Content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+  
+.Content .Post {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #AA8385;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.Post .Upper-text {
+    display: flex;
+    text-align: flex-start;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.Upper-text span {
+    display: flex;
+    text-align: left;
+    margin: 0px;
+}
+
+img .profile-photo {
+    width: 25px;
+    height: 25px;
+}
+
+.Main-text {
+    display: grid;
+    justify-content: flex-start;
+}
+
+.Main-text .title {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600px;
+    height: 40px;
+}
+
+.Main-text .body-text {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.Post .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.Post .Buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #EEE7ED;
+    padding-top: 10px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    color: #EEE7ED;
+    font-size: 14px;
+}
+
+.stat-item button,
+.stat-item a {
+    background: none;
+    border: none;
+    color: #EEE7ED;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.stat-item button:hover,
+.stat-item a:hover {
+    color: #A6979C;
+}
+
+.stat-item a {
+    text-decoration: none;
+}
+
+.vote-count {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #EEE7ED;
+}
+
+.button {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    transform: scale(0.90);
+}
+
+.Main-account {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.Main-account h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    height: 0px;
+}
+
+.Main-account .profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.Main-account p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.Main-account .home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.Main-account .home-button:hover {
+    background-color: #45a049;
+}
+
+/* Post section title */
+.Post-kamu {
+    margin-left: 100px; /* Same as the margin-left of .Content */
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Tambahkan media queries untuk penyesuaian lebih lanjut pada berbagai ukuran layar */
+@media (max-width: 1200px) {
+    .Account .Main-account {
+        width: 80%;
+    }
+
+    .Content .Post {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Top .btn {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .Account .Main-account {
+        width: 90%;
+    }
+
+    .Content .Post {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Top .Logo {
+        margin-bottom: 10px;
+    }
+
+    .Top .btn {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .Account .Main-account {
+        width: 95%;
+    }
+
+    .Content .Post {
+        width: 315%;
+    }
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+    }
+}

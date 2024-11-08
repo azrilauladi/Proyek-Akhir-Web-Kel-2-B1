@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(Asset/BG1.png) no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #64444d;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.navbar p {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.navbar hr {
+    width: 100%;
+    border: 2px solid #ffffff;
+    margin-bottom: 20px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.Content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    place-items: center;
+    margin-left: 220px;
+}
+
+.Content h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+
+.Content .Post {
+    width: 600px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: hsl(357, 19%, 59%);
+    font-size: 16px;
+    padding: 20px;
+}
+
+.Post .Upper-text {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 7px;
+}
+
+.Upper-text p {
+    display: flex;
+    align-items: center;
+}
+
+.Upper-text img.profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.Main-text {
+    display: grid;
+}
+
+.Main-text .title {
+    font-size: 13px;
+    margin-left: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.Main-text .body-text {
+    font-size: 16px;
+    width: 520px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.body-text p {
+    margin: 0;
+}
+
+.Post .post-image {
+    width: 520px;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.Post .Buttons {
+    display: flex;
+    width: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.Post .button {
+    display: flex;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    color: #EEE7ED;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0px;
+}
+
+.Post .downvote-button {
+    display: flex;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    color: #EEE7ED;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px 10px 10px 10px;
+    padding-top: 6px;
+}
+
+.stat-item {
+    display: flex;
+}
+
+.stat-item a {
+    width: 30px;
+    height: 40px;
+    display: flex;
+    color: #FFFFFF;
+    text-decoration-line: none;
+    font-size: 25px;
+    padding: 10px;
+    margin: 2px 5px 0px 7px;
+}
+
+a .vote-count {
+    margin-left: 10px;
+    padding-bottom: 30px
+}
+
+.vote-count {
+    font-size: 16px;
+    padding: 13px 0px;
+    margin-right: 20px;
+}
+
+.Form .delete-button {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: #6e1a1d;
+    color: #ffffff;
+    border: none;
+    transition: 0,3 ease;
+}
+
+.delete-button:hover {
+    transform: scale(0.95);
+}
+
+.delete-button:active {
+    transform: scale(0.95);
+}

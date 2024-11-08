@@ -1,0 +1,237 @@
+/* Mengatur dasar tampilan */
+body {
+    font-family: Arial, sans-serif;
+    background: url(Asset/BG1.png); /* Sesuaikan dengan warna background navbar di home.css */
+    margin: 0;
+    padding: 20px;
+    color: #EEE7ED; /* Sesuaikan dengan warna teks di home.css */
+}
+
+/* Gaya container postingan */
+.post-container {
+    background-color: #AA8385; /* Sesuaikan dengan warna background post di home.css */
+    border: 1px solid #64444d; /* Sesuaikan dengan warna border di home.css */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-container h2 {
+    font-size: 18px;
+    color: #FFFFFF; /* Sesuaikan dengan warna teks di home.css */
+}
+
+.post-container p {
+    color: #EEE7ED; /* Sesuaikan dengan warna teks di home.css */
+    margin: 10px 0;
+}
+
+.post-container .Title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* Gaya bagian komentar */
+.comments-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comments-section h3 {
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF; /* Sesuaikan dengan warna teks di home.css */
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+    background-color: #AA8385; /* Sesuaikan dengan warna background post di home.css */
+    border: 1px solid #64444d; /* Sesuaikan dengan warna border di home.css */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+}
+
+/* .comment:hover {
+    background-color:#AA8385; 
+} */
+
+.comment .No-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment p {
+    background: #AA8385;
+    text-align: center;
+    color: #EEE7ED;
+    width: 100%;
+}
+
+.comment strong {
+    color: #FFFFFF; /* Sesuaikan dengan warna teks di home.css */
+}
+
+/* Gaya area aksi untuk komentar */
+.comment-actions {
+    display: none;
+    margin-top: 10px;
+}
+
+.comment-actions textarea {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #88696a;
+    border: 2px solid #775c5d;
+    font-size: 14px;
+    margin-bottom: 20px
+}
+
+.comment-actions button {
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 10%;
+    background: #775c5d;
+    border: none;
+    color: #EEE7ED;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.comment:hover .comment-actions {
+    display: flex;
+}
+
+.edit-button, .delete-button {
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    color: #EEE7ED; /* Sesuaikan dengan warna teks di home.css */
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-button:hover, .delete-button:hover {
+    color: #A6979C; /* Sesuaikan dengan warna hover di home.css */
+}
+
+/* Gaya formulir komentar */
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #AA8385; /* Sesuaikan dengan warna background post di home.css */
+    border: 1px solid #64444d; /* Sesuaikan dengan warna border di home.css */
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.Comment-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Comment-comment textarea {
+    width: 93%;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #88696a;
+    border: 2px solid #775c5d;
+    font-size: 16px;
+}
+
+textarea::placeholder {
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.comment-form .button {
+    align-items: center;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.button i {
+    color: #FFFFFF;
+}
+
+.comment-form button {
+    align-self: flex-end;
+    padding: 10px 15px;
+    border: none;
+    background-color: #64444d; /* Sesuaikan dengan warna background tombol di home.css */
+    color: #EEE7ED; /* Sesuaikan dengan warna teks di home.css */
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #A6979C; /* Sesuaikan dengan warna hover di home.css */
+}
+
+a {
+    color: #EEE7ED; /* Sesuaikan dengan warna teks di home.css */
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Batasi lebar card dan pusatkan */
+.post-container, .comment, .comment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.comment-form {
+    padding: 15px;
+}
+
+/* Optional: Tambahkan padding untuk body agar terlihat lebih rapi */
+body {
+    padding: 20px 0;
+    background-color: #000000; /* Sesuaikan background agar mirip tampilan di home.css */
+    color: #EEE7ED; /* Sesuaikan dengan warna teks di home.css */
+}
