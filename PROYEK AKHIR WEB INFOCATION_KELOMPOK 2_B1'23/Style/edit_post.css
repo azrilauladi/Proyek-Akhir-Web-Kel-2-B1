@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+body {
+    background: url(Asset/BG1.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ubah height menjadi min-height */
+}
+
+.Top {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(Asset/BG1.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    z-index: 1000;
+    border-bottom: 2px solid #64444d;
+}
+
+.Top .Logo {
+    align-self: flex-start;
+}
+
+.Top .btn {
+    width: 120px;
+    height: 40px;
+    background: #64444d;
+    color: #EEE7ED;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 0px 0px 0px 0px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(0.90);
+}
+  
+.btn:active {
+    transform: scale(0.90)
+}
+
+.Line {
+    border-top: 5px solid #64444d;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 60px; /* Tambahkan padding atas */
+    padding-bottom: 60px; /* Tambahkan padding bawah */
+}
+
+.Edit-post {
+    width: 500px; /* Lebih kecil */
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: #AA8385;
+    font-size: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px; /* Tambahkan margin bawah */
+}
+
+.Edit-post h2 {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.input-box {
+    width: 100%;
+    margin: 25px 0;
+}
+  
+.input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: #88696a;
+    border: 2px solid #775c5d;
+    border-radius: 10px;
+    color: #ffffff;
+    opacity: 80%;
+    margin: 10px 0px;
+}
+
+.input-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: #88696a;
+    border: 2px solid #775c5d;
+    border-radius: 10px;
+    color: #ffffff;
+    opacity: 80%;
+    margin: 10px 0px;
+}
+
+.input-box label {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.Edit-post .Photo {
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    margin: 10px 0px;
+}
+
+.Edit-post .btn {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #775c5d;
+    border-radius: 10px;
+    color: #ffffff;
+    margin: 10px 0px;
+}
+
+.Edit-post .btn2 {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: #6e1a1d;
+    color: #ffffff;
+    margin: 10px 0px;
+    border: none;
+}

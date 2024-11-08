@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+body {
+    background: url(Asset/BG1.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #64444d;
+    width: 80px;
+    height: 55vh;
+    top: 55%;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    padding: 60px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50%; 
+    color: #EEE7ED;
+    font-size: 20px;
+    transition: background-color 0.1s, transform 0.1s;
+}
+
+.navbar a:hover {
+    background-color: #A6979C;
+}
+
+
+.Top {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(Asset/BG1.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    z-index: 1000;
+    border-bottom: 2px solid #64444d;
+}
+
+.Top .Logo {
+    align-self: flex-start;
+}
+
+.Top .btn {
+    width: 120px;
+    height: 40px;
+    background: #64444d;
+    color: #EEE7ED;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 0px 0px 0px 0px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(0.90);
+}
+  
+.btn:active {
+    transform: scale(0.90)
+}
+
+.Line {
+    border-top: 5px solid #64444d;
+}
+
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.Search .Input-search {
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+
+.Search input {
+    width: 600px;
+    height: 40px;
+    padding: 20px;
+    margin-left: 52px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #202020;
+    border: 1px solid #3b3b3b;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #7a7a7a;
+    opacity: 0.4;
+}
+
+.Search .button {
+    background: none;
+    border: none;
+}
+
+.Input-search i {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    color: #7a7a7a;
+    margin: 15px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    transform: scale(0.90);
+}
+  
+.btn:active {
+    transform: scale(0.90)
+}
+
+.Content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    place-items: center;
+}
+  
+.Content .Post {
+    width: 600px;
+    margin: 20px 40px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: #AA8385;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.Post .Upper-text {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+img .profile-photo {
+    width: 25px;
+    height: 25px;
+}
+
+.Main-text {
+    display: grid;
+}
+
+.Main-text .title {
+    font-size: 13px;
+    margin-left: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.Main-text .body-text {
+    font-size: 16px;
+    width: 520px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.Post .post-image {
+    width: 520px;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.Post .Buttons {
+    display: flex;
+    width: 30px;
+    margin: 10px 0px 10px 30px;
+}
+
+.stat-item .button {
+    display: flex;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    color: #EEE7ED;
+    border: none;
+    font-size: 25px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 10px 10px 10px 0px;
+}
+
+.Post .downvote-button {
+    display: flex;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    color: #EEE7ED;
+    border: none;
+    font-size: 25px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 10px 10px 10px 10px;
+    padding-top: 6px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: justify-;
+}
+
+.stat-item a {
+    width: 30px;
+    height: 40px;
+    display: flex;
+    color: #FFFFFF;
+    text-decoration-line: none;
+    font-size: 25px;
+    padding: 10px;
+    margin-right: 25px;
+    margin-top: 2px;
+    transition: 0.3s ease;
+}
+
+a .vote-count {
+    margin-left: 10px;
+    padding-bottom: 30px
+}
+
+.vote-count {
+    font-size: 16px;
+    padding: 13px 0px;
+    margin-right: 20px;
+}
+
+.button:hover {
+    transform: scale(0.90);
+    color: #4493F8;
+}
+  
+.button:active {
+    transform: scale(0.90)
+}
+
+a:hover {
+    transform: scale(0.90);
+}
+  
+a:active {
+    transform: scale(0.90)
+}
+
+.downvote-button:hover {
+    transform: scale(0.90);
+    color: #F20007;
+}
+
+.downvote-button:active {
+    transform: scale(0.90);
+}
+
+.comment-form {
+    display: flex;
+}
+
+.comment-form .comment-box {
+    width: 470px;
+    height: 60px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #88696a;
+    border: 2px solid #775c5d;
+    font-size: 16px;
+}
+
+textarea::placeholder {
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.comment-form .button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.Upper-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.profile-photo {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .Top {
+        display: flex;
+        align-items: center;
+    }
+
+    .Top .Logo {
+        margin-bottom: 10px;
+    }
+
+    .Top .btn {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .Content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Content .Post {
+        width: 100%;
+    }
+
+    .Search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Search .Input-search {
+        text-align: center;
+        width: 200%;
+        margin-top: 130px;
+    }
+}
